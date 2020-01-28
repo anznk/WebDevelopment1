@@ -218,7 +218,6 @@
     /* header
 ---------------------------------- */
     #header_sp {
-        position: fixed;
         display: inline-block;
         top: 0;
         width: 100%;
@@ -266,9 +265,7 @@
         cursor: pointer;
     }
     #body-wrap {
-        /*
         position: fixed;
-        */
         top: 0;
         left: 0;
         width: 100%;

@@ -166,7 +166,7 @@
     a.anchor {
         display: block;
         position: relative;
-        top: -40px;
+        top: -20px;
         visibility: hidden;
     }
     .left {

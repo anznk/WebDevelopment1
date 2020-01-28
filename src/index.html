@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="css/style_pc1.css">
-    <link rel="stylesheet" type="text/css" href="css/style_sp1.css">
+    <link rel="stylesheet" type="text/css" href="css/style_pc.css">
+    <link rel="stylesheet" type="text/css" href="css/style_sp.css">
+
     <title>portfolio_Anzu</title>
 </head>
 
 <body>
-
     <header>
 
         <!-- header_pc -->
@@ -20,7 +20,7 @@
             <div class="center_area">
                 <nav class="menu">
                     <ul class="menu_1">
-                        <li><a href="#about">ABOUT</a></li>
+                        <li id="menu_about"><a href="#about">ABOUT</a></li>
                         <li><a href="#work">WORKS</a></li>
                         <li><a href="#skills">SKILLS</a></li>
                         <li><a href="#contact">CONTACT</a></li>
@@ -30,7 +30,6 @@
         </div>
         <!-- /header_pc -->
         <!-- header_sp -->
-
         <div id="header_sp" class="show_sp">
             <div class="header-inner inner">
                 <div class="logo">
@@ -44,29 +43,22 @@
                     <span class="three"></span>
                 </div>
             </div>
+
             <div id="menu-wrap">
                 <div id="btn-close">
                     <span class="one"></span>
                     <span class="two"></span>
                 </div>
-                <!--
-                <div class="logo">
-                    <a href="./">
-                        <h1>ANZU NAKAYAMA</h1>
-                    </a>
-                </div>
--->
                 <nav class="menu">
                     <ul>
-                        <li><a id="link_about" href="#about">ABOUT</a></li>
-                        <li><a href="#work">WORKS</a></li>
-                        <li><a href="#skills">SKILLS</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
+                        <li><a class="menu_link" href="#about">ABOUT</a></li>
+                        <li><a class="menu_link" href="#work">WORKS</a></li>
+                        <li><a class="menu_link" href="#skills">SKILLS</a></li>
+                        <li><a class="menu_link" href="#contact">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
-        <!-- /header_sp_menu -->
     </header>
     <!-- main_area -->
     <main id="main_area">
@@ -231,19 +223,21 @@
         <!-- /sec_4 -->
     </main>
 
+
     <footer>
         <!-- footer_stc -->
         <div id="footer_stc">
             <div class="center_area">
                 <div id="btn_to_top"><a class="link_fade" href="#top"><span></span></a></div>
                 <div class="copyright" role="contentinfo">
-                    <small></small>
+                    <small>Copyright © Anzu Nakayama 2020</small>
                 </div>
             </div>
         </div>
         <!-- /footer_stc -->
     </footer>
     <script src="js/common.js"></script>
+
 </body>
 
 </html>

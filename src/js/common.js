@@ -25,6 +25,7 @@ var action_open = function() {
     // click body-wrap
     var wrap = document.getElementById('body-wrap');
     wrap.addEventListener('click', function() {
+        // hidden menu
         open.classList.remove('is-active');
         menu.classList.remove('is-active');
         body.classList.remove('is-fixed');
@@ -33,6 +34,16 @@ var action_open = function() {
         }
     }, false);
 
+    // click links
+    var link = document.getElementsByClassName("menu_link");
+    for (let i = 0; i < 4; i++) {
+        link[i].addEventListener('click', () => {
+            // hidden menu
+            open.classList.remove('is-active');
+            menu.classList.remove('is-active');
+            body.classList.remove('is-fixed');
+        }, false);
+    }
 }
 
 

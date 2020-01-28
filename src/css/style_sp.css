@@ -228,11 +228,15 @@
         background-color: black;
     }
     .inner {
-        padding: 10px;
         box-sizing: border-box;
     }
     .header-inner {
-        height: 80px;
+        top: 0;
+        position: fixed;
+        background-color: black;
+        width: 100%;
+        z-index: 5;
+        height: 70px;
         display: -webkit-flex;
         display: flex;
         justify-content: space-between;
@@ -281,6 +285,7 @@
         width: 40px;
         height: 30px;
         cursor: pointer;
+        margin-right: 3rem;
     }
     #btn-open span {
         display: block;
@@ -303,13 +308,13 @@
     }
     .header-inner .logo {
         margin: 0 auto;
-        padding-left: 40px;
+        padding-left: 45px;
         position: relative;
     }
     .header-inner .logo h1 {
         color: #FFF;
         display: inline-block;
-        font-size: 3.0rem;
+        font-size: 5vw;
         letter-spacing: 0.1em;
         line-height: 70px;
         padding: 0 10px;
@@ -370,7 +375,7 @@
     }
     #main_area .sec_1 .box_text {
         color: #aaa;
-        padding: 10px 15px 0 35px;
+        padding: 10px 15px 0 15px;
     }
     #main_area .sec_1 .title {
         letter-spacing: 0.45em;
@@ -535,5 +540,6 @@
     }
     .copyright {
         text-align: center;
+        font-size: 3vw;
     }
 }

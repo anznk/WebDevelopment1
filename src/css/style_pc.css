@@ -398,6 +398,9 @@
         height: 70%;
         object-fit: contain;
     }
+    #main_area .sec_3 .skill_item p {
+        color: #fff;
+    }
     /* contact form */
     input[type="text"],
     input[type="email"] {

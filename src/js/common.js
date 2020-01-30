@@ -1,3 +1,6 @@
+/* menu bar for sp
+---------------------------------- */
+
 var body = document.body;
 var open = document.getElementById('btn-open');
 var close = document.getElementById('btn-close');
@@ -46,7 +49,6 @@ var action_open = function() {
     }
 }
 
-
 var action_close = function() {
     //visible menu
     menu.classList.remove('is-active');
@@ -57,3 +59,15 @@ var action_close = function() {
         wrap.parentNode.removeChild(wrap);
     }
 }
+
+/* page top button
+---------------------------------- */
+var pagetop = document.getElementById('pagetop');
+
+window.addEventListener("scroll", function() {
+    if (window.pageYOffset > 100) {
+        pagetop.classList.add('fixed');
+    } else {
+        pagetop.classList.remove('fixed');
+    }
+});

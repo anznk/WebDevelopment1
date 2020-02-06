@@ -1,10 +1,10 @@
 /* menu bar for sp
 ---------------------------------- */
 
-var body = document.body;
-var open = document.getElementById('btn-open');
-var close = document.getElementById('btn-close');
-var menu = document.getElementById('menu-wrap');
+let body = document.body;
+let open = document.getElementById('btn-open');
+let close = document.getElementById('btn-close');
+let menu = document.getElementById('menu-wrap');
 
 //click open button
 open.addEventListener('click', function() {
@@ -16,17 +16,17 @@ close.addEventListener('click', function() {
     action_close();
 }, false);
 
-var action_open = function() {
+let action_open = function() {
     //visible menu
     menu.classList.add('is-active');
 
     // create body-wrap
-    var element = document.createElement('div');
+    let element = document.createElement('div');
     element.setAttribute('id', 'body-wrap');
     body.appendChild(element);
 
     // click body-wrap
-    var wrap = document.getElementById('body-wrap');
+    let wrap = document.getElementById('body-wrap');
     wrap.addEventListener('click', function() {
         // hidden menu
         open.classList.remove('is-active');
@@ -38,7 +38,7 @@ var action_open = function() {
     }, false);
 
     // click links
-    var link = document.getElementsByClassName("menu_link");
+    let link = document.getElementsByClassName("menu_link");
     for (let i = 0; i < 4; i++) {
         link[i].addEventListener('click', () => {
             // hidden menu
@@ -49,12 +49,12 @@ var action_open = function() {
     }
 }
 
-var action_close = function() {
+let action_close = function() {
     //visible menu
     menu.classList.remove('is-active');
 
     //hidden body-wrap
-    var wrap = document.getElementById('body-wrap');
+    let wrap = document.getElementById('body-wrap');
     if (wrap.parentNode) {
         wrap.parentNode.removeChild(wrap);
     }
@@ -62,7 +62,7 @@ var action_close = function() {
 
 /* page top button
 ---------------------------------- */
-var pagetop = document.getElementById('pagetop');
+let pagetop = document.getElementById('pagetop');
 
 window.addEventListener("scroll", function() {
     if (window.pageYOffset > 100) {

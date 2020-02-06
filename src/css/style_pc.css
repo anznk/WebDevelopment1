@@ -139,6 +139,9 @@
     .show_pc {
         display: block;
     }
+    .mandatory p {
+        color: #cc0033 none;
+    }
     /* body
 ---------------------------------- */
     html {
@@ -482,16 +485,15 @@
         letter-spacing: 0.12em;
         line-height: 1.6em;
         font-size: 1.3rem;
-        padding-bottom: 15px;
     }
     .wrap_contact dt {
         clear: left;
         float: left;
-        width: 100px;
+        line-height: 40px;
     }
     .wrap_contact dd {
-        margin-left: 100px;
-        width: 700px;
+        margin-left: 120px;
+        padding-bottom: 25px;
     }
     .wrap_contact .dd_btn {
         font-size: 0;
@@ -513,6 +515,19 @@
         bottom: 5px;
         position: absolute;
         right: 0;
+    }
+    #main_area .sec_4 .wrap_contact .err_mes {
+        margin: 10px 0 0;
+        padding: 2px 5px 2px 5px;
+        /* padding: 2px 4px 2px 1.3em; */
+        background: #d8355d none;
+        font-size: 14px;
+        font-weight: bold;
+        color: #fff;
+        line-height: 1.3;
+    }
+    #main_area .sec_4 .wrap_contact .err_mes:first-child {
+        margin: 0;
     }
     /* fotter
 ---------------------------------- */

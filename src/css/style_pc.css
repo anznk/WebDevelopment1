@@ -493,7 +493,7 @@
     }
     .wrap_contact dd {
         margin-left: 120px;
-        padding-bottom: 25px;
+        margin-bottom: 25px;
     }
     .wrap_contact .dd_btn {
         font-size: 0;
@@ -516,19 +516,24 @@
         position: absolute;
         right: 0;
     }
-    #main_area .sec_4 .wrap_contact .err_mes {
+    #main_area .sec_4 .wrap_contact .msg {
+        display: none;
+    }
+    #main_area .sec_4 .wrap_contact .err_msg {
+        display: block;
         margin: 10px 0 0;
         padding: 2px 5px 2px 5px;
-        /* padding: 2px 4px 2px 1.3em; */
-        background: #d8355d none;
         font-size: 14px;
         font-weight: bold;
-        color: #fff;
-        line-height: 1.3;
+        color: red;
+        line-height: 1.3em;
+        text-align: left;
     }
-    #main_area .sec_4 .wrap_contact .err_mes:first-child {
+    /*
+    #main_area .sec_4 .wrap_contact .err_msg:first-child {
         margin: 0;
     }
+    */
     /* fotter
 ---------------------------------- */
     #footer_stc {

@@ -534,6 +534,19 @@
         width: 100px;
         font-size: 20px;
     }
+    #main_area .sec_4 .wrap_contact .msg {
+        display: none;
+    }
+    #main_area .sec_4 .wrap_contact .err_msg {
+        display: block;
+        margin: 10px 0 0;
+        padding: 2px 5px 2px 5%;
+        font-size: 14px;
+        font-weight: bold;
+        color: red;
+        line-height: 1.3em;
+        text-align: left;
+    }
     /* fotter
 ---------------------------------- */
     /* page top */
